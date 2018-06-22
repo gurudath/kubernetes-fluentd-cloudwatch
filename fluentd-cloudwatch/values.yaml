@@ -1,0 +1,14 @@
+# Default values for fluentd-cloudwatch.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+image:
+  repository: nehayward/fluentd-cloudwatch
+  tag: latest
+  pullPolicy: IfNotPresent
+
+aws: 
+  id: 
+  secret: 
+  region: us-west-2
+  loggroup: 
+
