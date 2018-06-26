@@ -17,7 +17,8 @@ This is a modified version of [fluentd](https://www.fluentd.org) to easily integ
 
 2. Make sure you are connected to kubernetes and that you have helm tiller installed. You'll run this command or you can edit the `values.yaml` file with your AWS secrets and the log group name.
 
-> `helm install fluentd-cloudwatch/  --set aws.id=\"id\" --set aws.secret=\"secret\" --set aws.loggroup=\"kubernetes\"`
+> `helm install fluentd-cloudwatch/ --set aws.id=$(echo $AWSID) --set aws.secret=$(echo $AWSKEY) --set aws.loggroup=\"nick-tes-logs\" --name fluentd
+
 
 3. You can verify by checking the log group on the website.
 
