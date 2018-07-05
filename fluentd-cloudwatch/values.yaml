@@ -7,8 +7,8 @@ image:
   pullPolicy: IfNotPresent
 
 aws: 
-  id: 
-  secret: 
+  access_id: 
+  access_secret: 
   region: us-west-2
   loggroup: 
 
