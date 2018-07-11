@@ -8,7 +8,7 @@ image:
 
 aws: 
   access_key: 
-  access_secret: 
+  secret_key: 
   region: us-west-2
   loggroup: 
 
