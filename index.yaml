@@ -2,12 +2,11 @@ apiVersion: v1
 entries:
   fluentd-cloudwatch:
   - apiVersion: v1
-    appVersion: "1.0"
-    created: 2018-06-25T13:38:54.565416725-07:00
+    appVersion: 1.0.0
+    created: 2018-07-11T14:49:09.930650323-07:00
     description: A Helm chart for Kubernetes
-    digest: 1146e7edb8424c8734f25ec6126ae919aa9ddbb93eeab36fa58500e08bd9ea0c
+    digest: 58ac78c2b4805dc5aea20ce9d15c862d7c3cabe0cd7dda393590be3f279e5199
     name: fluentd-cloudwatch
     urls:
-    - fluentd-cloudwatch-0.1.0.tgz
-    version: 0.1.0
-generated: 2018-06-25T13:38:54.563444061-07:00
+    - fluentd-cloudwatch-1.0.0.tgz
+    version: 1.0.0
