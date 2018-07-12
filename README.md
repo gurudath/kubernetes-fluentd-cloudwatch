@@ -13,14 +13,23 @@ This is a modified version of [fluentd](https://www.fluentd.org) to easily integ
 
 1. First create a log group, you can do this via the cli or on in Cloudwatch under AWS services.
 
-> `aws logs create-log-group --log-group-name kubernetes-logs`
+> `aws logs create-log-group --log-group-name logs`
 
 2. Make sure you are connected to kubernetes and that you have helm tiller installed. You'll run this command or you can edit the `values.yaml` file with your AWS secrets and the log group name.
 
-> `helm install fluentd-cloudwatch/ --set aws.access_key=$(echo $AWSID) --set aws.secret_key=$(echo $AWSKEY) --set aws.loggroup=\"logs\" --name fluentd
+> `helm install fluentd-cloudwatch/ --set aws.access_key="id" --set aws.secret_key="secret" --set aws.loggroup="logs" --name fluentd
 
 
 3. You can verify by checking the log group on the website.
+
+## Updating Chart
+
+1. Update the `fluentd-cloudwatch/Chart.yaml` file to the desired version then run following commands. Remove old packages.
+
+```bash
+helm package fluentd-cloudwatch/
+helm repo index .
+```
 
 ## Troubleshoot
 
