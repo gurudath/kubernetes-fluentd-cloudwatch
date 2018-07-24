@@ -1,5 +1,4 @@
-apiVersion: v1
-appVersion: "1.1.0"
+appVersion: "0.0.1"
 description: Send logs with fluentd to cloudwatch
 name: fluentd-cloudwatch
-version: 1.1.0
+version: 0.0.1

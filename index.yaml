@@ -1,13 +1,12 @@
 apiVersion: v1
 entries:
   fluentd-cloudwatch:
-  - apiVersion: v1
-    appVersion: 1.1.0
-    created: 2018-07-11T14:56:57.27854015-07:00
+  - appVersion: 0.0.1
+    created: 2018-07-24T15:02:29.640142958-07:00
     description: Send logs with fluentd to cloudwatch
-    digest: 75a1d71ee672976bdfc602cfe5a8194066f4f101533329aaefb27b49f67147dd
+    digest: 4553b57eeb8105256835cef9d97b1433e25a21ed6e94acb519101a05d65d147b
     name: fluentd-cloudwatch
     urls:
-    - fluentd-cloudwatch-1.1.0.tgz
-    version: 1.1.0
-generated: 2018-07-11T14:56:57.278126547-07:00
+    - fluentd-cloudwatch-0.0.1.tgz
+    version: 0.0.1
+generated: 2018-07-24T15:02:29.63971796-07:00
